@@ -15,6 +15,8 @@ Currently the application implements solutions to problems 8, 9 and 10 of Projec
 These implementations are designed to work with arbitraty parameters and so they solve not just the problems stated
 exactly as they are in the Euler Project, but problems of that general form.
 
+
+
 Getting Started:
 ----------------
 
@@ -43,6 +45,17 @@ the solvers work. Multi-threading would be a nice enhancement for a future relea
 See the samples directory for a Sample problems file ("SampleProblemsFile.txt") and sample output 
 ("SampleProblemsFileOutput.txt")
 
+
+
+Notices:
+--------
+
+This app uses the following third party libraries:
+
+Apache Commons Math (http://commons.apache.org/proper/commons-math/) under the Apache License (http://www.apache.org/licenses/LICENSE-2.0.html)
+Apache Log4j (https://logging.apache.org/log4j/2.x/) under the Apache License (https://logging.apache.org/log4j/2.x/license.html)
+Jackson (https://github.com/FasterXML/jackson) under the Apache License (http://www.apache.org/licenses/LICENSE-2.0.html)
+The Spring Framework (https://spring.io) under the Apache License (http://www.apache.org/licenses/LICENSE-2.0.html)
 
 
 
