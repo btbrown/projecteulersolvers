@@ -1,0 +1,8 @@
+2018-10-31 22:31:56.257 Initializing application...
+2018-10-31 22:31:57.077 Start solve for problem Id: 8 'Largest product in a series'
+2018-10-31 22:31:57.090 Solved problem id: 8 'Largest product in a series' with result: 23514624000 taking 12 millisecond(s)
+2018-10-31 22:31:57.090 Start solve for problem Id: 9 'Special Pythagorean triplet'
+2018-10-31 22:31:57.096 Solved problem id: 9 'Special Pythagorean triplet' with result: 31875000 taking 5 millisecond(s)
+2018-10-31 22:31:57.098 Start solve for problem Id: 10 'Summation of primes'
+2018-10-31 22:31:58.630 Solved problem id: 10 'Summation of primes' with result: 142913828922 taking 1530 millisecond(s)
+2018-10-31 22:31:58.632 Application finished.
