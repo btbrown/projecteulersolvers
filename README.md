@@ -20,7 +20,7 @@ exactly as they are in the Euler Project, but problems of that general form.
 Getting Started:
 ----------------
 
-The final packaged version of the application is a single executable JAR file.
+The final packaged version of the application is a single executable JAR file and requires Java 8 to run.
 
 A pre-built version of this can be found in the /bin directory of the repository
 
