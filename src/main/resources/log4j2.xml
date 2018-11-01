@@ -22,11 +22,12 @@
 			additivity="false">
 			<appender-ref ref="console" />
 		</Logger>
-		<!-- enable this for debugging to get stack traces -->
+		<!-- enable this for debugging to get stack traces
 		<Logger name="com.projecteulersolvers" level="debug"
 			additivity="false" >
 			<appender-ref ref="console"/>
 		</Logger>
+		-->
 		
 	</Loggers>
 </Configuration>

@@ -38,7 +38,7 @@ java -jar bin/project-euler-solvers-1.0.0-runnable.jar -problemsFile samples/Sam
 of ProblemParameters regarding details on the expected arguments specific to each problem.
 For example, documentation/javadoc/com/projecteulersolvers/service/problemparameters/Problem10Parameters.html
 
-*Note that for command line direct, the json string should be quoted to avoid parsing issues due to white space.
+*Note that for command line direct, the json string should be quoted to avoid parsing issues.
 
 *Note also, that the standard convention that the json property names be double quoted in properly formed json has been 
 relaxed for convenience.
