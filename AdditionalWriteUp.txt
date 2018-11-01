@@ -1,0 +1,76 @@
+Additional write up requested for the interview
+-----------------------------------------------
+
+A sample of the programs output can be found in 
+samples/SampleProblemsFileOutput.txt
+
+I chose the problems starting with #10 to first get a sense of the difficulty of
+these problems and how much time I might need for them.
+
+I then implemented 9 then 8. 
+
+In choosing 9 and 9, I did a quick scan of the first hundred or so of the 
+catalog of problem titles but none really grabbed me in particular. I did look
+at the last problem, but concious of time I decided against attempting that.
+
+So I chose 9 because I had noticed it due to its proximity to ten and the 
+followed through because the novelty of the pythagorean triples appealed to me. 
+
+I chose 8 because it seemed it would not take long to implement and I thought
+by selecting it I would quickly satisfy the requirements in terms of the 
+algorithms themselves and, after implementing enough of the
+general application to meet the basic requirements of the task, I could decide
+if I wanted to take on harder problems or spend more time on the features of the
+application itself. As it turned out I decided to spend more time on the design 
+of the general application itself, parameterizing the algorithms to take inputs
+other than those specified in the euler project problem definition, enhancing
+the interface to facilitate specification of those parameters as well as 
+making the application extensible to allow for easy addition of new problem
+implementations. I did this employing a variety of tools such as Spring relevant 
+to the job posting as an opportunity to demonstrate my capabilty with them for 
+you and to give you a broader sample of my coding.
+
+The problem solving process for problem 10 involved identifying that the tricky
+part of the problem was determining if a number was prime or not efficiently. 
+I realized that of course this would likely be a common problem and decided to
+see if there was a library that could handle this. Apache's commons
+math library had just the thing. The Apache library was designed to be light
+with no unnecessary dependencies, it is well established and widely used with a
+liberal license so it seemed a good include. I did this not to "cheat" but to 
+demonstrate the thinking that leveraging existing libraries is always something 
+that is worth considering.
+
+The problem solving process for problem 9 was more involved. I spent some
+time working out ways to attempt to make the search more efficient. I eventually
+just used some basic parameters of the problem (that a < b < c) to reduce the
+number of iterations and a system of equations to reduce three nested loops of 
+the most blunt approach to two. After this, I did some research to see if there 
+were some advanced theorems that might help. I did eventually references to a 
+formula that could produce the triples 
+(https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple)
+and in doing so stumbled across some stack overflow solutions that used this 
+(but incorrectly, I had noticed that they did not realize that the basic version 
+of the formula that was employed does not generate ALL triples, it was just 
+lucky that employing it found the one that problem 10 required). 
+So, I ultimately rejected using this as the runtime was not that bad to begin 
+with the current solution, the code was easy to understand and furthermore the 
+Euclid approach didn't provide a runtime benefit when you modified it to be able 
+to find all triples.
+
+For problem 8, there was really not much to this one. Just a straight forward 
+algorithm to scan through an arbitraty sequence of digits. Although for this one 
+I did consider coding an alternative multi-threaded implementation that would 
+break the sequence into chunks and delegate to several concurrent worker threads
+to increase performance, but did not end up with the time to implement that.
+Such an approach would have worked nicely for problem 10 as well.
+
+All in all, including tests, documentation, packaging, I spent about 14 hours on 
+it over the course of three days
+
+
+
+
+
+
+
+
