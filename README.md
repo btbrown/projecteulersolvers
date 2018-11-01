@@ -29,10 +29,14 @@ The command line parameters specify which problems to solve and parameters for t
 The json can be specified on the command line or instead a path to a file containing the json can be specified instead.
 
 Example of command line direct (from root of repository):
-java -jar bin/project-euler-solvers-1.0.0-shaded.jar -problems "[{problemId:10,args:[2000000]}]"
+java -jar bin/project-euler-solvers-1.0.0-runnable.jar -problems "[{problemId:10,args:[2000000]}]"
 
 Example of file input:
-java -jar bin/project-euler-solvers-1.0.0-shaded.jar -problemsFile samples/SampleProblemsFile.txt
+java -jar bin/project-euler-solvers-1.0.0-runnable.jar -problemsFile samples/SampleProblemsFile.txt
+
+*Note see the javadoc (under the documentation folder at root of the repository) for the populate method of implementors 
+of ProblemParameters regarding details on the expected arguments specific to each problem.
+For example, documentation/javadoc/com/projecteulersolvers/service/problemparameters/Problem10Parameters.html
 
 *Note that for command line direct, the json string should be quoted to avoid parsing issues due to white space.
 
