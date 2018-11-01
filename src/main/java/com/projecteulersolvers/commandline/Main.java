@@ -70,9 +70,14 @@ public class Main {
 						BigDecimal val = service.solve(p);
 						long end = System.currentTimeMillis();
 						
-						LOGGER.info("Solved problem id: " + rq.getProblemId() + " '"
-								+ Problem.getDescriptionByID(rq.getProblemId()) + "' with result: "
-								+ val.toPlainString() + " taking " + (end - start) + " millisecond(s)");
+						if(val != null) {
+							LOGGER.info("Solved problem id: " + rq.getProblemId() + " '"
+									+ Problem.getDescriptionByID(rq.getProblemId()) + "' with result: "
+									+ val.toPlainString() + " taking " + (end - start) + " millisecond(s)");
+						} else {
+							LOGGER.info("No solution found for problem id: " + rq.getProblemId() + " '"
+									+ Problem.getDescriptionByID(rq.getProblemId()) + "' taking " + (end - start) + " millisecond(s)");
+						}
 						
 					} catch (RuntimeException e) {
 						LOGGER.error("Error trying to solve problem id: " + rq.getProblemId() + " '"

@@ -42,10 +42,19 @@ public class Problem9SolverTests {
 	}
 	
 	@Test
-	void noSolutionTest() {
+	void noSolution() {
 		Problem9Solver solver = new Problem9Solver();
 		Problem9Parameters p9p = new Problem9Parameters();
 		p9p.setTargetSum(13);
+		BigDecimal solution = solver.solve(p9p);
+		assertEquals(null,solution);
+	}
+	
+	@Test
+	void negativeSum() {
+		Problem9Solver solver = new Problem9Solver();
+		Problem9Parameters p9p = new Problem9Parameters();
+		p9p.setTargetSum(-25);
 		BigDecimal solution = solver.solve(p9p);
 		assertEquals(null,solution);
 	}
